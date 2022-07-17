@@ -52,7 +52,8 @@
 
         <div class="mt-2 text-center">
           <router-link :to="jobPageLink" class="text-brand-blue-1"
-            >Expand</router-link
+          >Expand
+          </router-link
           >
         </div>
       </div>
@@ -66,13 +67,13 @@ export default {
   props: {
     job: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     jobPageLink() {
       return `/jobs/results/${this.job.id}`;
-    },
-  },
+    }
+  }
 };
 </script>
